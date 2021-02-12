@@ -11,4 +11,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag constanalpi/github-actions-test:latest
     - name: Push to Docker Hub
-      run: docker push constanalpi/github-actions-test:tagname
+      run: docker push constanalpi/github-actions-test:latest
