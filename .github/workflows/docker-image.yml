@@ -9,6 +9,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag constanalpi/github-actions-test
+      run: docker build . --file Dockerfile --tag constanalpi/github-actions-test:latest
     - name: Push to Docker Hub
       run: docker push constanalpi/github-actions-test:tagname
